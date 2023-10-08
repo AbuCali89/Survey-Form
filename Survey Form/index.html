@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/styles.css"> 
+    </head>
+    <body>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name">Name 
+          <input class="firsts"id="name" type="text" name="radio" placeholder="Enter your Name" required>
+          </label>
+          <label id="email-label" for="email">Email
+          <input class="firsts" id="email" type="email" name="radio" placeholder="Enter your Email" required>
+          </label>
+          <label id="number-label"for="age">Age (optional)
+          <input class="firsts" id="number" type="number" name="radio" min=10 max=99 placeholder="Enter your Age">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <div class="recommend">
+          <label>Would you recommend freeCodeCamp to a friend?</label>
+          <label for="definitely"> 
+          <input id="definitely" value="definitely" type="radio" name="button" class="inline"> Definitely</label>
+          <label for="maybe">
+          <input id="maybe" value="maybe" type="radio" name="button" class="inline"> Maybe</label>
+          <label for="notsure">
+          <input id="notsure" value="note-sure" type="radio" name="button" class="inline"> Not sure</label>
+          </div>
+          <div class="role">
+          <label>Which option best describes your current role?
+            <select id="dropdown">
+              <option value="select-role">Select current role</option>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Other</option>
+            </select>
+          </label>
+          </div>
+          <label><input type="checkbox" value="front-end-proj" class="inline"> Front-End Projects</label>
+          <label><input type="checkbox" value="back-end-proj" class="inline"> Back-End Projects</label>
+          <label><input type="checkbox" value="challenges" class="inline"> Challenges</label>
+          <label><input type="checkbox" value="video" class="inline"> Video</label>
+          <label><input type="checkbox" value="wiki" class="inline"> Wiki</label>
+          <label><input type="checkbox" value="city-meetup" class="inline"> City Meatup</label>
+        <label>Any comments or suggestions?
+          <textarea rows="6" cols="80" placeholder="Enter your comment here"></textarea>
+        </label>
+        </fieldset>
+        <button id="submit">Submit</button>
+    </form>    
+    </body>
+</html>
